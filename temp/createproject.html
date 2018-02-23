@@ -1,0 +1,57 @@
+{% extends "index.html" %}
+{% block Header %}
+{% endblock %}
+{% block Services %}
+{% endblock %}
+{% block Portfolio %}
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-2">
+			{% if project!="" %}
+			<div class="alert alert-success alert-dismissible fade show" role="alert">
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<strong>Well done!</strong> {{project}}
+			</div>
+			{% endif %}
+			{% if error!="" %}
+			<div class="alert alert-danger alert-dismissible fade show" role="alert">
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<strong>Warning!</strong> {{error}}
+			</div>
+			{% endif %}
+
+			<form action=formsubmit.php method="POST">
+				<div class="form-group">
+					<label for="projName">firstname</label>
+					<input type="text" class="form-control" id="projName" name="projectName" placeholder="project Name">
+				</div>
+				<div class="form-group">
+					<label for="description">Another label</label>
+					<input type="text" class="form-control" id="description" name="description" placeholder="Description">
+				</div>
+					<div class="form-group">
+						<label for="target">target</label>
+						<input type="text" class="form-control" id="target" name="target" placeholder="Target">
+					</div>
+					<div class="form-group">
+						<label for="proKey">proKey</label>
+						<input type="text" class="form-control" id="proKey" name="proKey" placeholder="Public Key">
+					</div>
+					<button type="submit" class="btn btn-success pull-right">Submit</button>
+				</div>
+			</form>	
+		</div>	
+		</div>
+	</div>
+</div>
+{% endblock %}
+{% block Team %}
+{% endblock %}
+{% block Clients %}
+{% endblock %}
+{% block Contact %}
+{% endblock %}

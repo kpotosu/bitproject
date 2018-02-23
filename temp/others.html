@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+{% block Header %}
+{% endblock %}
+{% block Services %}
+<div class="container">
+	<div class="row">
+		{% for x in others %}
+		<div class="col-md-12">
+			<a href="others.php"><h4 class="service-heading" >{{x.projectName}}</h4></a>
+			<p class="text-muted" href="others.php">{{x.projectDes}}</p>
+			<p><span class="iconspace">  <i class="fa fa-bullseye text-primary"></i> {{x.protarget}}  </span> <span class="iconspace">  <i class="fa fa-calendar text-primary"></i> {{x.projdate}}  </span> <span class="iconspace">  <i class="fa fa-key text-primary"></i> {{x.prokey}}</span></p>
+		</div>
+		<a class="btn btn-primary" href="donate.php?">Donate Now!</a>
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}
+{% block Portfolio %}
+{% endblock %}
+{% block Team %}
+{% endblock %}
+{% block Clients %}
+{% endblock %}
+{% block Contact %}
+{% endblock %}

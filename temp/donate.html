@@ -1,0 +1,43 @@
+{% extends "index.html" %}
+{% block Header %}
+{% endblock %}
+{% block Services %}
+{% endblock %}
+{% block Portfolio %}
+ <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-2">
+<form action=formsubmit.php method="POST">
+  <div class="form-group">
+    <label for="projName">firstname</label>
+    <input type="text" class="form-control" id="projName" projName="firstname" placeholder="project Name">
+  </div>
+  <div class="form-group">
+    <label for="description">Another label</label>
+    <input type="text" class="form-control" id="description" des="description" placeholder="Description">
+     <div class="form-group">
+    <label for="target">target</label>
+    <input type="text" class="form-control" id="target" proTarget="target" placeholder="target">
+  </div>
+  <div class="form-group">
+    <label for="target">proDate</label>
+    <input type="text" class="form-control" id="proDate" proDate="proDate" placeholder="Project Date">
+  </div>
+    <div class="form-group">
+    <label for="target">proDate</label>
+    <input type="text" class="form-control" id="proDate" proDate="proDate" placeholder="Project Date">
+  </div>
+    <center><button type="submit" class="btn btn-success">Submit</button></center>
+  </div>
+</form>	
+</div>
+</div>
+</div>
+
+{% endblock %}
+{% block Team %}
+{% endblock %}
+{% block Clients %}
+{% endblock %}
+{% block Contact %}
+{% endblock %}
