@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    {% block head %}
 
   <head>
     <meta charset="utf-8">
@@ -25,6 +26,7 @@
   </head>
 
   <body id="page-top">
+    {% endblock %}
 
     <!-- Navigation -->
     {% block Navigation %}
@@ -38,7 +40,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Projects</a>
+              <a class="nav-link js-scroll-trigger" href="others.php">Projects</a>
             </li>
             <li class="nav-item"> 
               <a class="nav-link js-scroll-trigger" href="#portfolio">Donors</a>
@@ -60,19 +62,13 @@
       </div>
     </nav>
     {% endblock %}
-    &nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;
-    &nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;
-    &nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;
-    &nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;
-    &nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;
-    &nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;
     <!-- Header -->
     {% block Header %}
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
           <div class="intro-lead-in">Welcome To Bitimpact</div>
-          <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
+          <div class="intro-heading text-uppercase">Bitcoin for Impact</div>
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="others.php">Explore Projects</a>
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="create.php">Create Project</a>
         </div>
@@ -87,24 +83,24 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">ACTIVE PROJECTS</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h3 class="section-subheading text-muted">The lastest projects running available on Bitimpact</h3>
           </div>
         </div>
         <div class="row text-">
           <div class="col-md-4">
 
-            <a href="others.php"><h4 class="service-heading">Others Inititive</h4></a>
-            <p class="text-muted" href="others.php">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <a href="#"><h4 class="service-heading">{{librarypro}}</h4></a>
+            <p class="text-muted" href="#">{{libraryDes}}</p>
           </div>
 
           <div class="col-md-4">
      
-            <a href=""><h4 class="service-heading" href="others.php">Responsive Design</h4></a>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <a href=""><h4 class="service-heading" href="#">{{hopepro}}</h4></a>
+            <p class="text-muted">{{othersDes}}</p>
           </div>
           <div class="col-md-4">
-           <a href=""> <h4 class="service-heading">Web Security</h4></a>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+           <a href=""> <h4 class="service-heading">{{otherspro}}</h4></a>
+            <p class="text-muted">{{othersDes}}</p>
           </div>
         </div>
       </div>
