@@ -18,6 +18,7 @@ $mysqli= mysqli_connect(DB_HOST,DB_USER,DB_PWORD,DB_NAME);
 		mysqli_connect_errors());
 		exit();
 		}
+
 $str_query="SELECT DISTINCT project_id,name,description,target,prodate,public_key FROM project where project_id=1";
 $data=mysqli_query($mysqli,$str_query);
 
